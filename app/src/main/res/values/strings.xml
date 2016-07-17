@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">American Literature</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_native_americans">First Nations</string>
+    <string name="title_activity_first_encounters">First Encounters</string>
+    <string name="title_activity_first_english_wave">First English Wave</string>
+    <string name="title_activity_second_english_wave">Second English Wave</string>
+    <string name="title_activity_witch_trials">Witch Trials</string>
+
+    <string name="content_native">\tThe First Nations of America were diverse and span from North America to South American.
+        Some kept an oral tradition of stories
+        with no formal written records while others like the Mayans and Aztecs wrote down religious and other important information in codice which were elaborately written in elaborate pictoral language. </string>
+    <string name="content_encounter">\tDiaz</string>
+    <string name="content_first_english"></string>
+    <string name="content_second_english"></string>
+    <string name="content_witch"></string>
+</resources>
