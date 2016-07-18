@@ -7,6 +7,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ListView;
+import android.widget.TabHost;
 
 public class NativeAmericans extends AppCompatActivity {
     @Override
@@ -15,6 +17,24 @@ public class NativeAmericans extends AppCompatActivity {
         setContentView(R.layout.activity_native_americans);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        final String[] nativeMenu = {"Overview","Codex","Community" };
+        //final int[] nativeImage = {};
+        final TabHost host = (TabHost)findViewById(R.id.tabHost);
+
+        host.setup();
+
+        //Tab Name
+        TabHost.TabSpec spec = host.newTabSpec("History");
+        spec.setIndicator("History");
+        spec.setContent(R.id.nativeHistoricalList);
+        host.addTab(spec);
+
+        //Tab Win
+        spec = host.newTabSpec("Text");
+        spec.setIndicator("Text");
+        spec.setContent(R.id.nativeContextualList);
+        host.addTab(spec);
     }
     @Override
     public void onBackPressed() {
