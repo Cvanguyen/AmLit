@@ -19,16 +19,22 @@ public class FirstEnglishWave extends AppCompatActivity {
 
         host.setup();
 
-        //Tab Name
+        //Tab History
         TabHost.TabSpec spec = host.newTabSpec("History");
         spec.setIndicator("History");
-        spec.setContent(R.id.nativeHistoricalList);
+        spec.setContent(R.id.firstEnglishHistoricalList);
         host.addTab(spec);
 
-        //Tab Win
+        //Tab Text
         spec = host.newTabSpec("Text");
         spec.setIndicator("Text");
-        spec.setContent(R.id.nativeContextualList);
+        spec.setContent(R.id.firstEnglishContextualList);
+        host.addTab(spec);
+
+        //Tab Connections
+        spec = host.newTabSpec("Connection");
+        spec.setIndicator("Connection");
+        spec.setContent(R.id.firstEnglishText);
         host.addTab(spec);
 
 

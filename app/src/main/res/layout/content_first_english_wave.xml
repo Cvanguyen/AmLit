@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.cam.amlit.FirstEnglishWave"
     tools:showIn="@layout/activity_first_english_wave">
@@ -32,23 +29,38 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/nativeHistorical">
+                android:id="@+id/firstEnglishHistorical">
                 <ListView
+                    android:layout_marginTop="50dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/nativeHistoricalList">
+                    android:id="@+id/firstEnglishHistoricalList">
                 </ListView>
             </FrameLayout>
 
 
             <FrameLayout
-                android:id="@+id/nativeContextual"
+                android:id="@+id/firstEnglishContextual"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ListView
-                    android:id="@+id/nativeContextualList"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/firstEnglishContextualList"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/firstEnglishText"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"/>
             </FrameLayout>

@@ -19,17 +19,25 @@ public class WitchTrials extends AppCompatActivity {
 
         host.setup();
 
-        //Tab Name
+        //Tab Witch History
         TabHost.TabSpec spec = host.newTabSpec("History");
         spec.setIndicator("History");
-        spec.setContent(R.id.nativeHistoricalList);
+        spec.setContent(R.id.witchHistoricalList);
         host.addTab(spec);
 
-        //Tab Win
+        //Tab Witch text
         spec = host.newTabSpec("Text");
         spec.setIndicator("Text");
-        spec.setContent(R.id.nativeContextualList);
+        spec.setContent(R.id.witchContextualList);
         host.addTab(spec);
+
+        //Tab Witch Connection
+        spec = host.newTabSpec("Connection");
+        spec.setIndicator("Connection");
+        spec.setContent(R.id.witchText);
+        host.addTab(spec);
+
+
 
     }
     @Override

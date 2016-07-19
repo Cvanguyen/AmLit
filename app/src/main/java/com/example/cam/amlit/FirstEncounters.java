@@ -19,18 +19,23 @@ public class FirstEncounters extends AppCompatActivity {
 
         host.setup();
 
-        //Tab Name
+        //Tab History
         TabHost.TabSpec spec = host.newTabSpec("History");
         spec.setIndicator("History");
-        spec.setContent(R.id.nativeHistoricalList);
+        spec.setContent(R.id.firstHistoricalList);
         host.addTab(spec);
 
-        //Tab Win
+        //Tab Text
         spec = host.newTabSpec("Text");
         spec.setIndicator("Text");
-        spec.setContent(R.id.nativeContextualList);
+        spec.setContent(R.id.firstContextualList);
         host.addTab(spec);
 
+        //Tab Connections
+        spec = host.newTabSpec("Connection");
+        spec.setIndicator("Connection");
+        spec.setContent(R.id.firstText);
+        host.addTab(spec);
 
     }
     @Override

@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.cam.amlit.SecondEnglishWave"
     tools:showIn="@layout/activity_second_english_wave">
@@ -33,25 +30,37 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/nativeHistorical">
+                android:id="@+id/englishSecondHistorical">
                 <ListView
+                    android:layout_marginTop="50dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/nativeHistoricalList">
+                    android:id="@+id/englishSecondHistoricalList">
                 </ListView>
             </FrameLayout>
 
 
             <FrameLayout
-                android:id="@+id/nativeContextual"
+                android:id="@+id/englishSecondContextual"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ListView
-                    android:id="@+id/nativeContextualList"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/englishSecondContextualList"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/englishSecondText"/>
             </FrameLayout>
 
         </FrameLayout>
