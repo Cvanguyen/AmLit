@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TabHost;
 
 public class FirstEncounters extends AppCompatActivity {
@@ -14,6 +16,20 @@ public class FirstEncounters extends AppCompatActivity {
         setContentView(R.layout.activity_first_encounters);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        final String[] history = {"Class Interpretation", "Bartholome De la Casas", "De 7Vaca", "Diaz"};
+        final String[] text = {"Short Account of the Destruction of the Indies"};
+
+
+        ArrayAdapter<String> storyAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,text);
+        ArrayAdapter<String> historyAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,history);
+
+        ListView historyList = (ListView) findViewById(R.id.firstHistoricalList);
+
+        ListView contextualList = (ListView) findViewById(R.id.firstContextualList);
+
+        historyList.setAdapter(historyAdapter);
+        contextualList.setAdapter(storyAdapter);
 
         final TabHost host = (TabHost)findViewById(R.id.tabHost);
 

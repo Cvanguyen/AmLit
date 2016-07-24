@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TabHost;
 
 public class WitchTrials extends AppCompatActivity {
@@ -16,6 +18,20 @@ public class WitchTrials extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final TabHost host = (TabHost)findViewById(R.id.tabHost);
+
+        final String[] witchHistory = {"Overview"};
+        final String[] witchText = {"Speech to the General Court"};
+
+
+        ArrayAdapter<String> storyAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,witchText);
+        ArrayAdapter<String> historyAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,witchHistory);
+
+        ListView historyList = (ListView) findViewById(R.id.witchHistoricalList);
+
+        ListView contextualList = (ListView) findViewById(R.id.witchContextualList);
+
+        historyList.setAdapter(historyAdapter);
+        contextualList.setAdapter(storyAdapter);
 
         host.setup();
 

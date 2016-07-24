@@ -11,11 +11,6 @@
     <string name="title_activity_second_english_wave">Second English Wave</string>
     <string name="title_activity_witch_trials">Witch Trials</string>
 
-    <string name="content_native">\tThe First Nations of America were diverse and span from North America to South American.
-        Some kept an oral tradition of stories
-        with no formal written records while others like the Mayans and Aztecs wrote down religious and other important information in codice which were elaborately written in elaborate pictoral language. </string>
-    <string name="content_encounter">\tDiaz</string>
-    <string name="content_first_english"></string>
-    <string name="content_second_english"></string>
-    <string name="content_witch"></string>
+
+    <string name="de_casas"></string>
 </resources>
